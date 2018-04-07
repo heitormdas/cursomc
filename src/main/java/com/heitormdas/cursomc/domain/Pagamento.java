@@ -16,11 +16,11 @@ import com.heitormdas.cursomc.domain.enums.EstadoPagamento;
 @Inheritance(strategy=InheritanceType.JOINED)
 public abstract class Pagamento implements Serializable {
 	private static final long serialVersionUID = 1L;
-
+	
 	@Id
 	private Integer id;
 	private Integer estado;
-	
+
 	@OneToOne
 	@JoinColumn(name="pedido_id")
 	@MapsId
@@ -84,6 +84,7 @@ public abstract class Pagamento implements Serializable {
 			return false;
 		return true;
 	}
+	
 	
 	
 }

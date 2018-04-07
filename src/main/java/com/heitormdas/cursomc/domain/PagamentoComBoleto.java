@@ -12,7 +12,7 @@ public class PagamentoComBoleto extends Pagamento {
 
 	private Date dataVencimento;
 	private Date dataPagamento;
-	
+
 	public PagamentoComBoleto() {
 	}
 
@@ -36,9 +36,6 @@ public class PagamentoComBoleto extends Pagamento {
 
 	public void setDataPagamento(Date dataPagamento) {
 		this.dataPagamento = dataPagamento;
-	}
-	
-	
-	
+	}	
 	
 }
